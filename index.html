@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX76XF8R');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Álgebra lineal avanzada</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="La estructura de los operadores lineales y la geometría del producto interno: espacio dual, la función determinante, valores propios, Cayley-Hamilton y forma de Jordan, Gram-Schmidt y proyecciones, teorema espectral, formas bilineales y cuadráticas, valores singulares, pseudoinversas, mínimos cuadrados y una primera mirada a los espacios de Hilbert.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX76XF8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap" data-page="index">
+<header class="topbar"><a class="brand" href="index.html">Álgebra lineal <b>avanzada</b></a><span class="eyebrow">Curso visual e interactivo · Matemática</span><a class="al-sitio" href="https://aaramirez.github.io/">← Todos los cursos</a></header>
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Ruta de aprendizaje"></nav>
+<main>
+
+<p class="aviso-curado" role="note">El material de Matemática está en proceso de curado: puede tener errores.</p>
+<header class="hero">
+  <span class="eyebrow">Curso visual e interactivo · Matemática</span>
+  <h1>Toda matriz, vista en la base correcta, es casi diagonal</h1>
+  <p class="lede">Una transformación lineal parece una tabla de números sin forma; en la base adecuada se vuelve una lista de estiramientos. Este curso busca esa base: autovalores, forma de Jordan, teorema espectral y valores singulares. Después usa la geometría del producto interno para resolver lo que no tiene solución exacta, que es el corazón de la estadística: la mejor aproximación por mínimos cuadrados.</p>
+</header>
+
+<section>
+  <h2>Cómo usar este curso</h2>
+  <div class="prose">
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 14 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Para estudiantes de matemática, estadística y actuaría en su segundo curso de álgebra lineal. Conviene haber leído Álgebra lineal: aquí se usan sin repetir los sistemas, el rango, las bases, el espacio cociente y la matriz de una transformación. Los autovalores complejos usan los complejos de Sistemas numéricos.</p>
+    <p><b>Cómo está hecho.</b> Una nube de puntos de datos acompaña al curso: se rota, se estira, se proyecta sobre rectas y planos, se descompone en ejes principales y al final se ajusta por mínimos cuadrados. Los laboratorios dejan arrastrar matrices y ver elipses, ejes y proyecciones moverse; las prácticas usan Python con NumPy, SciPy y SymPy, y R para las aplicaciones estadísticas. Las demostraciones centrales (Cayley-Hamilton, teorema espectral, ley de inercia de Sylvester, teorema de la proyección) se hacen completas. El curso habilita Análisis funcional, Modelos lineales, Análisis multivariante y Series de tiempo.</p>
+  </div>
+</section>
+
+<details class="stage" id="temario" open><summary><h2><span class="pn">Empieza aquí</span> Tabla de contenido</h2></summary>
+  <div class="mods">
+    <a class="mod" href="temario.html"><span class="n">≡</span><b>Tabla de contenido</b><p>Cada capítulo con sus secciones y sus laboratorios.</p></a>
+  </div>
+</details>
+
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> Dualidad y determinantes</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="espacio-dual"><span class="n">01</span><b>El espacio dual</b><p>Los funcionales lineales forman un espacio: base dual, anulador, doble dual y la transpuesta de una transformación.</p></div>
+    <div class="mod soon" data-id="funcion-determinante"><span class="n">02</span><b>La función determinante</b><p>El determinante como la única forma multilineal alternada que vale 1 en la identidad, y el determinante de un operador.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> La estructura de un operador</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="valores-propios"><span class="n">03</span><b>Valores propios y diagonalización</b><p>Polinomio característico, multiplicidades y el criterio para que un operador sea diagonalizable.</p></div>
+    <div class="mod soon" data-id="polinomio-minimal"><span class="n">04</span><b>Cayley-Hamilton, polinomio minimal y subespacios invariantes</b><p>Todo operador anula su polinomio característico; el polinomio minimal decide la diagonalización y la triangulación.</p></div>
+    <div class="mod soon" data-id="descomposicion-prima"><span class="n">05</span><b>El teorema de la descomposición prima y los operadores nilpotentes</b><p>Partir el espacio en subespacios invariantes, uno por cada factor del minimal, y estudiar lo que queda: lo nilpotente.</p></div>
+    <div class="mod soon" data-id="forma-de-jordan"><span class="n">06</span><b>La forma canónica de Jordan</b><p>La forma más simple de cualquier operador sobre los complejos, cómo calcularla y para qué sirve.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> La geometría del producto interno</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="producto-interno"><span class="n">07</span><b>Espacios con producto interno</b><p>Producto interno real y hermítico, norma, ángulo, desigualdad de Cauchy-Schwarz y ortogonalidad.</p></div>
+    <div class="mod soon" data-id="gram-schmidt-y-proyecciones"><span class="n">08</span><b>Gram-Schmidt, proyecciones y mejor aproximación</b><p>Construir bases ortonormales, proyectar sobre un subespacio y demostrar que la proyección es el punto más cercano.</p></div>
+    <div class="mod soon" data-id="teorema-espectral"><span class="n">09</span><b>Operadores adjuntos y el teorema espectral</b><p>Adjunto, operadores autoadjuntos, ortogonales y unitarios, y la diagonalización en una base ortonormal.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> Formas bilineales y cuadráticas</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="formas-bilineales"><span class="n">10</span><b>Formas bilineales y la ley de inercia de Sylvester</b><p>Formas bilineales y su matriz, congruencia, diagonalización de formas simétricas y el invariante de Sylvester.</p></div>
+    <div class="mod soon" data-id="formas-cuadraticas"><span class="n">11</span><b>Formas cuadráticas: clasificación y optimización</b><p>Formas definidas e indefinidas, criterios para reconocerlas, derivadas matriciales y máximos y mínimos con y sin restricciones.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-5" open><summary><h2><span class="pn">Parte 5</span> Descomposiciones y mínimos cuadrados</h2><span class="cuenta" data-etapa-cuenta="5"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="valores-singulares"><span class="n">12</span><b>La descomposición en valores singulares</b><p>Toda matriz, incluso rectangular, es una rotación, un estiramiento y otra rotación: A = UΣVᵀ.</p></div>
+    <div class="mod soon" data-id="pseudoinversas-y-minimos-cuadrados"><span class="n">13</span><b>Pseudoinversas y sistemas sin solución exacta</b><p>Existencia y número de soluciones, inversas generalizadas y la solución por mínimos cuadrados de un sistema incompatible.</p></div>
+    <div class="mod soon" data-id="espacios-de-hilbert"><span class="n">14</span><b>Hacia dimensión infinita: espacios de Hilbert</b><p>Producto interno con completitud: el teorema de la proyección en dimensión infinita y la esperanza condicional como la mejor predicción.</p></div>
+  </div>
+</details>
+
+
+
+<nav class="pager" id="pager" aria-label="Capítulo anterior y siguiente"></nav>
+</main>
+</div>
+<footer><span>Curso abierto de aaramirez.github.io.</span><span>Sitio publicado: <a href="https://github.com/aaramirez/mate-algebra-lineal-avanzada" target="_blank" rel="noopener">github.com/aaramirez/mate-algebra-lineal-avanzada</a></span></footer>
+</div>
+<script src="assets/lab.js"></script>
+</body>
+</html>
